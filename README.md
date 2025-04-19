@@ -26,7 +26,7 @@ Develop a Node.js application that:
 ### create Docker image with the help of Dockerfile
 - docker build -t image_name .
 
-![Screenshot](Screenshot (722).png)
+![Screenshot](https://github.com/Venkata-123kalla/WEB-SCRAPPING-WITH-NODE-JS-AND-PUPPETEER-AND-USES-FLASK-AND-MULTISTAGE-DOCKER/blob/master/Screenshot%20(722).png?raw=true)
 
 ### After cretaing image then run the conatiner and will see the output
 ![Screenshot](https://github.com/Venkata-123kalla/WEB-SCRAPPING-WITH-NODE-JS-AND-PUPPETEER-AND-USES-FLASK-AND-MULTISTAGE-DOCKER/blob/master/Screenshot%20(722).png?raw=true)
