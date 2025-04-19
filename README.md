@@ -29,7 +29,7 @@ Develop a Node.js application that:
 ![Screenshot](Screenshot (722).png)
 
 ### After cretaing image then run the conatiner and will see the output
-![Screenshot](Screenshot (723).png)
+![Screenshot](https://github.com/Venkata-123kalla/WEB-SCRAPPING-WITH-NODE-JS-AND-PUPPETEER-AND-USES-FLASK-AND-MULTISTAGE-DOCKER/blob/master/Screenshot%20(731).png?raw=true)
 
 ### The web-scrapping contents will be copied or extracted into the scraped_data.json file
 
