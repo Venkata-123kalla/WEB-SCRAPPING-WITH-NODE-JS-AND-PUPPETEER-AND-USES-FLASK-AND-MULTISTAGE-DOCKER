@@ -26,10 +26,10 @@ Develop a Node.js application that:
 ### create Docker image with the help of Dockerfile
 - docker build -t image_name .
 
-![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (722).png)
+![Screenshot](Screenshot (722).png)
 
 ### After cretaing image then run the conatiner and will see the output
-![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (723).png)
+![Screenshot](Screenshot (723).png)
 
 ### The web-scrapping contents will be copied or extracted into the scraped_data.json file
 
@@ -57,13 +57,13 @@ Build a lightweight Python Flask server that reads the previously scraped **Amaz
 - Implement a simple Flask application (server.py) that: 
   - Reads the JSON file. 
   - Provides an HTTP endpoint (e.g., at /) that returns the scraped content as JSON. 
-![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (727).png)
+![Screenshot](Screenshot (727).png)
 
 - Build Docker image and create conatiner and run it
-![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (730).png)
+![Screenshot](Screenshot (730).png)
 
 - Expose port 5000 : http://<public-ip-ec2>:5000
-![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (731).png)
+![Screenshot](Screenshot (731).png)
 
  
 # 📦 Task 3 – Multi-Stage Dockerfile for Web Scraping & Hosting
@@ -96,16 +96,16 @@ Combine the web scraping (Node.js + Puppeteer) and Flask-based API server into a
 - docker run -p 5000:5000 multi-scraper
 
 
-![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (735).png)
+![Screenshot](Screenshot (735).png)
 
 ## if we want to see the scarped_data.json file we have to login to the conatiner witl the help of these commands
 - docker start container-id && docker exec -it containner-id /bin/bash
-![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (735).png)
+![Screenshot](Screenshot (735).png)
 
 ## if we want to see the output of the flask server
 - use http://<public-ip-ec2>:5000
 
-![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (739).png)
+![Screenshot](Screenshot (739).png)
 
 
 
