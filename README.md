@@ -26,14 +26,10 @@ Develop a Node.js application that:
 ### create Docker image with the help of Dockerfile
 - docker build -t image_name .
 
-<p align="center">
-  <img src="C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (722).png" width="300"/>
-</p>
+![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (722).png)
 
 ### After cretaing image then run the conatiner and will see the output
-<p align="center">
-  <img src="C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (723).png" width="300"/>
-</p>
+![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (723).png)
 
 ### The web-scrapping contents will be copied or extracted into the scraped_data.json file
 
@@ -61,19 +57,13 @@ Build a lightweight Python Flask server that reads the previously scraped **Amaz
 - Implement a simple Flask application (server.py) that: 
   - Reads the JSON file. 
   - Provides an HTTP endpoint (e.g., at /) that returns the scraped content as JSON. 
-<p align="center">
-  <img src="C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (727).png" width="300"/>
-</p>
+![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (727).png)
 
 - Build Docker image and create conatiner and run it
-<p align="center">
-  <img src="C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (730).png" width="300"/>
-</p>
+![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (730).png)
 
 - Expose port 5000 : http://<public-ip-ec2>:5000
-<p align="center">
-  <img src="C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (731).png" width="300"/>
-</p>
+![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (731).png)
 
  
 # 📦 Task 3 – Multi-Stage Dockerfile for Web Scraping & Hosting
@@ -102,25 +92,20 @@ Combine the web scraping (Node.js + Puppeteer) and Flask-based API server into a
 - package.json: For Node dependencies
 
 ## create an image with the help of Dockerfile
-- docker build -t finalimage
-- docker run --rm -e SCRAPE_URL=http://example.com -v $(pwd):/app finalimage
+- docker build --build-arg SCRAPE_URL="https://github.com" -t multi-scraper .
+- docker run -p 5000:5000 multi-scraper
 
-<p align="center">
-  <img src="C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (735).png" width="300"/>
-</p>
+
+![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (735).png)
 
 ## if we want to see the scarped_data.json file we have to login to the conatiner witl the help of these commands
 - docker start container-id && docker exec -it containner-id /bin/bash
-<p align="center">
-  <img src="C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (735).png" width="300"/>
-</p>
+![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (735).png)
 
 ## if we want to see the output of the flask server
 - use http://<public-ip-ec2>:5000
 
-<p align="center">
-  <img src="C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (731).png" width="300"/>
-</p>
+![Screenshot](C:\Users\mahen\OneDrive\Pictures\Screenshots\Screenshot (739).png)
 
 
 
