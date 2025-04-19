@@ -29,7 +29,7 @@ Develop a Node.js application that:
 ![Screenshot](Screenshot (722).png)
 
 ### After cretaing image then run the conatiner and will see the output
-![Screenshot](https://github.com/Venkata-123kalla/WEB-SCRAPPING-WITH-NODE-JS-AND-PUPPETEER-AND-USES-FLASK-AND-MULTISTAGE-DOCKER/blob/master/Screenshot%20(731).png?raw=true)
+![Screenshot](https://github.com/Venkata-123kalla/WEB-SCRAPPING-WITH-NODE-JS-AND-PUPPETEER-AND-USES-FLASK-AND-MULTISTAGE-DOCKER/blob/master/Screenshot%20(722).png?raw=true)
 
 ### The web-scrapping contents will be copied or extracted into the scraped_data.json file
 
@@ -57,13 +57,13 @@ Build a lightweight Python Flask server that reads the previously scraped **Amaz
 - Implement a simple Flask application (server.py) that: 
   - Reads the JSON file. 
   - Provides an HTTP endpoint (e.g., at /) that returns the scraped content as JSON. 
-![Screenshot](Screenshot (727).png)
+![Screenshot](https://github.com/Venkata-123kalla/WEB-SCRAPPING-WITH-NODE-JS-AND-PUPPETEER-AND-USES-FLASK-AND-MULTISTAGE-DOCKER/blob/master/Screenshot%20(727).png?raw=true)
 
 - Build Docker image and create conatiner and run it
-![Screenshot](Screenshot (730).png)
+![Screenshot](https://github.com/Venkata-123kalla/WEB-SCRAPPING-WITH-NODE-JS-AND-PUPPETEER-AND-USES-FLASK-AND-MULTISTAGE-DOCKER/blob/master/Screenshot%20(730).png?raw=true)
 
 - Expose port 5000 : http://<public-ip-ec2>:5000
-![Screenshot](Screenshot (731).png)
+![Screenshot](https://github.com/Venkata-123kalla/WEB-SCRAPPING-WITH-NODE-JS-AND-PUPPETEER-AND-USES-FLASK-AND-MULTISTAGE-DOCKER/blob/master/Screenshot%20(731).png?raw=true)
 
  
 # 📦 Task 3 – Multi-Stage Dockerfile for Web Scraping & Hosting
@@ -96,16 +96,16 @@ Combine the web scraping (Node.js + Puppeteer) and Flask-based API server into a
 - docker run -p 5000:5000 multi-scraper
 
 
-![Screenshot](Screenshot (735).png)
+![Screenshot](https://github.com/Venkata-123kalla/WEB-SCRAPPING-WITH-NODE-JS-AND-PUPPETEER-AND-USES-FLASK-AND-MULTISTAGE-DOCKER/blob/master/Screenshot%20(735).png?raw=true)
 
 ## if we want to see the scarped_data.json file we have to login to the conatiner witl the help of these commands
 - docker start container-id && docker exec -it containner-id /bin/bash
-![Screenshot](Screenshot (735).png)
+![Screenshot](https://github.com/Venkata-123kalla/WEB-SCRAPPING-WITH-NODE-JS-AND-PUPPETEER-AND-USES-FLASK-AND-MULTISTAGE-DOCKER/blob/master/Screenshot%20(735).png?raw=true)
 
 ## if we want to see the output of the flask server
 - use http://<public-ip-ec2>:5000
 
-![Screenshot](Screenshot (739).png)
+![Screenshot](https://github.com/Venkata-123kalla/WEB-SCRAPPING-WITH-NODE-JS-AND-PUPPETEER-AND-USES-FLASK-AND-MULTISTAGE-DOCKER/blob/master/Screenshot%20(739).png?raw=true)
 
 
 
